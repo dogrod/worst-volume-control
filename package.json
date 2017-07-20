@@ -15,6 +15,7 @@
     "push": "git pull && npm run bump && git push"
   },
   "dependencies": {
+    "@types/webpack-env": "^1.13.0",
     "vue": "^2.3.3",
     "vue-router": "^2.6.0"
   },
@@ -23,6 +24,7 @@
     "babel-core": "^6.22.1",
     "babel-loader": "^7.1.1",
     "babel-plugin-istanbul": "^4.1.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-plugin-transform-runtime": "^6.22.0",
     "babel-preset-env": "^1.3.2",
     "babel-preset-stage-2": "^6.22.0",
@@ -69,8 +71,8 @@
     "ts-loader": "^2.3.0",
     "typescript": "^2.4.1",
     "url-loader": "^0.5.8",
+    "vue-class-component": "^5.0.2",
     "vue-loader": "^12.1.0",
-    "vue-property-decorator": "^5.1.1",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.3.3",
     "webpack": "^2.6.1",

@@ -4,7 +4,8 @@
 </template>
 
 <script lang="ts">
-import { Component, Inject, Model, Prop, Provide, Vue, Watch } from 'vue-property-decorator'
+import Vue from 'vue'
+import Component from 'vue-class-component'
 
 @Component({
   name: 'app'

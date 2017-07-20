@@ -4,14 +4,15 @@
 </template>
 
 <script lang="ts">
-import { Component, Inject, Model, Prop, Provide, Vue, Watch } from 'vue-property-decorator'
+import Vue from 'vue'
+import Component from 'vue-class-component'
 
 @Component({
   name: 'hello'
 })
 export default class Hello extends Vue {
   
-  @Provide() msg = 'Welcome to Your Vue.js App'
+  msg: string = 'Welcome to Your Vue.js App'
 }
 </script>
 
