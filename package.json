@@ -5,11 +5,14 @@
   "author": "dogrod <rodrickjue@hotmail.com>",
   "private": true,
   "scripts": {
+    "minor": "mversion minor -m 'chore: Bumped to v%s'",
+    "bump": "mversion patch -m 'chore: Bumped to v%s'",
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
     "build": "node build/build.js",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
-    "test": "npm run unit"
+    "test": "npm run unit",
+    "push": "git pull && npm run bump && git push"
   },
   "dependencies": {
     "vue": "^2.3.3",
@@ -50,11 +53,15 @@
     "karma-webpack": "^2.0.2",
     "lolex": "^1.5.2",
     "mocha": "^3.2.0",
+    "mversion": "^1.10.1",
+    "node-sass": "^4.5.3",
     "opn": "^5.1.0",
     "optimize-css-assets-webpack-plugin": "^2.0.0",
     "ora": "^1.2.0",
     "phantomjs-prebuilt": "^2.1.14",
+    "pug": "^2.0.0-rc.2",
     "rimraf": "^2.6.0",
+    "sass-loader": "^6.0.6",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
     "sinon": "^2.1.0",
