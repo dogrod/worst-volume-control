@@ -1,15 +1,12 @@
 <template lang="pug">
 .hello
-  h1 worst volume control
+  h1 {{ msg }}
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import Component from 'vue-class-component'
+import { Component, Inject, Model, Prop, Vue, Watch } from 'vue-property-decorator'
 
-@Component({
-  name: 'hello'
-})
+@Component
 export default class Hello extends Vue {
   
   msg: string = 'Welcome to Your Vue.js App'
@@ -35,4 +32,5 @@ li {
 a {
   color: #42b983;
 }
+
 </style>

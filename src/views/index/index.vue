@@ -4,14 +4,13 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import Component from 'vue-class-component'
+import { Component, Inject, Model, Prop, Vue, Watch } from 'vue-property-decorator'
 
 @Component({
   name: 'Index'
 })
 export default class Index extends Vue {
-  title: string = 'worst volume control LOL'
+  title: string = 'Worst volume control LOL'
 }
 </script>
 
